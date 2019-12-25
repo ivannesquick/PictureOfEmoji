@@ -48,9 +48,6 @@ class MainPresenter: IMainPresenter {
         let model = EmojiModel(createdDate: Date(), imageData: emojiImage.pngData()!)
         let imageData = emojiImage.pngData()
         cacheService.attach(currentUser: user!, imageEmojiData: model)
-        
-        // save Date() to coredata
-        // save emojiImage.pngData() to coredata
     }
     
     func onTapHistory() {

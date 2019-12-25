@@ -136,24 +136,6 @@ extension CacheService: ICacheService {
         }
     }
 
-    }
+}
         
-//func retrieve(login:String) -> [StockDTO] {
-//    let context = self.persistentContainer.viewContext
-//
-//    let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-//    fetchRequest.predicate = NSPredicate(format: "login == %@", login)
-//    do {
-//        let fetchResults = try context.fetch(fetchRequest)
-//        guard let results = fetchResults as? [UserMO], let person = results.first else {
-//            return []
-//        }
-//        let array: [StocksMO] = person.stocks?.allObjects as! [StocksMO]
-//        return array.map { StockDTO(managedStock: $0) }
-//    }
-//
-//    catch {
-//        fatalError()
-//    }
-//}
 
